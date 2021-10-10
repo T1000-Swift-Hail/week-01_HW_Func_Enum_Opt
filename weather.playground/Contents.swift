@@ -11,7 +11,12 @@ func  getForecast() -> Forecast? {
     return nil}
 
 currentWeather = getForecast()
-
+if let x = getForecast(){
+    currentWeather = x
+}
+else {
+    currentWeather = Forecast.Fair
+}
 
 switch currentWeather ?? Forecast.Fair{
 case .Hot :
@@ -21,5 +26,4 @@ case .Cold :
 case .Fair :
     print("the weather is Fair")
 }
-
 
