@@ -3,11 +3,11 @@
 ## You have an application for weather forcast ,  that resonds with the current weather forecast  .
 
 ### Follow the steps
-//Create an Enumeration : Forecast
-//Add the following possible values: Hot, Cold, Fair
-//Create an optioanl of type Forecast : currentWeather
-//Create a function getForecastFromServer with return type Forecast 
-//the function getForecastFromServer should return Forecast.Fair 
+- Create an Enumeration : Forecast
+- Add the following possible values: Hot, Cold, Fair
+- Create an optioanl of type Forecast : currentWeather
+- Create a function getForecastFromServer with return type Forecast 
+- the function getForecastFromServer should return Forecast.Fair 
 - Assign the value of getForecastFromServer to the optional variable currentWeather
 - Using Switch on currentWeather , in Case .Fair print "the weather is Fair"
 - Repeat the last step for the remaining possible values
