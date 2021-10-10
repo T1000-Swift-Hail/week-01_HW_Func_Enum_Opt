@@ -10,13 +10,12 @@ enum foreCast{
    
 }
 
-var currentWeather: foreCast? = nil
+var currentWeather: foreCast?
 
 func getForecastFromServer()-> foreCast?{
-    return foreCast.Fair
+    return nil
 }
 
-//foreCast.Fair
 currentWeather = getForecastFromServer()
 
 switch currentWeather ?? foreCast.Fair {
