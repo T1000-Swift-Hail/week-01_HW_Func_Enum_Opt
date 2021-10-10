@@ -1,24 +1,24 @@
 import UIKit
 
-enum forecast {
-    case Hot
-    case Cold
-    case Fair
+enum Forecast {
+    case hot
+    case cold
+    case fair
+    case NoValues
 }
 
-var currentWeather : forecast?
+func getForecastFromServer() ->Forecast?{
+    return nil
+}
 
-currentWeather = Hot()
-
-switch  currentWeather ?? forecast.Hot {
-case .Cold :
+let currentWeather = getForecastFromServer()
+switch  currentWeather ?? .NoValues {
+case .cold :
     print("stay home")
-case .Hot :
+case .hot :
     print("I drink anything cold")
-case .Fair:
+case .fair:
     print("call the fire department")
-}
-
-func Hot() ->forecast?{
-    return forecast.Fair
+case .NoValues :
+    print("No values")
 }
